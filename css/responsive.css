@@ -1,0 +1,35 @@
+/* burger */
+@media (max-width: 768px) {
+    .toggle-menu {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+    .header-wrapper {
+        flex-direction: column;
+    }
+    .ul-list {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .nav-list.activeNav {
+        display: block;
+        padding-bottom: 20px;
+    }
+    .line1.active {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .line2.active {
+        display: none;
+    }
+    .line3.active {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+
+
