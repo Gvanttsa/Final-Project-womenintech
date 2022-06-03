@@ -29,6 +29,26 @@
         top: 50%;
         transform: translate(-50%, -50%) rotate(-45deg);
     }
+    .slider-title {
+        right: 160px;
+    }
+    .slider-text {
+        right: 80px;
+        font-size: 30px;
+        width: 250px;
+    }
+}
+@media (max-width:480px) {
+    .slider-title {
+        font-size: 15px;
+    }
+    .slider-text {
+        font-size: 25px;
+        right: 40px;
+    }
+    .arrow {
+        display: none;
+    }
 }
 
 
