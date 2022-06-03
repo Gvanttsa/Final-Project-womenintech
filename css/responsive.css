@@ -1,4 +1,31 @@
 /* burger */
+@media (max-width: 1024px) {
+    .accordion-div-title {
+        font-size: 18px;
+    }
+    .fa-angle-down {
+        font-size: 18px;
+    }
+    .accordion-container {
+        width: 270px;
+    }
+}
+@media (max-width: 850px) {
+    .accordion-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .accordion-div-title {
+        font-size: 20px;
+    }
+    .fa-angle-down {
+        font-size: 20px;
+    }
+    .accordion-container {
+        max-width: 320px;
+        width: 100%;
+    }
+}
 @media (max-width: 768px) {
     .toggle-menu {
         display: block;
@@ -50,6 +77,7 @@
         display: none;
     }
 }
+
 
 
 
