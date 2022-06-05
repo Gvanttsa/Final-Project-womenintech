@@ -1,4 +1,3 @@
-/* burger */
 @media (max-width: 1024px) {
     .accordion-div-title {
         font-size: 18px;
@@ -80,4 +79,15 @@
 
 
 
-
+@media (max-width: 1057px) {
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-img {
+        width: 250px;
+    }
+    .names {
+        margin-bottom: 50px;
+    }
+}

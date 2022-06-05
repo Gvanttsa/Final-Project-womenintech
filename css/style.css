@@ -138,7 +138,6 @@
 .section2-wrapper {
     max-width: 1200px;
     width: 100%;
-    height: 460px;
     margin: 0 auto;
     padding-top: 60px;
 }
@@ -191,7 +190,7 @@
 .accordion-div-title {
     color: #fff;
     font-size: 20px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto';
     font-weight: bold;
 }
 .accordion-div-text {
@@ -213,15 +212,55 @@
     position: absolute;
     cursor: pointer;
     
-
 }
 .accordion-container.activecontainer .accordion-div-text {
-    height: 150px;
+    height: 140px;
     padding: 10px;
 }
 .accordion-container.activecontainer .fa-angle-down {
     transform: rotate(180deg);
 }
+
+/* section3 */
+.api {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section3-title {
+    font-size: 20px;
+    color: #7bf137;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 80px;
+    text-align: center;
+}
+.section3-text {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+.names {
+    color: #fff;
+    font-family: 'Merriweather', serif;
+}
+.user-img {
+    height: 100%;
+    
+}
+
 /* hover effects */
 .list-a:hover {
     color: #7bf137;
@@ -235,6 +274,11 @@
 .accordion-container:hover {
     background-color: black;
 }
+.names:hover {
+    color: #7bf137;
+}
+
+
 
 
 
