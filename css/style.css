@@ -267,6 +267,7 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -362,6 +363,14 @@
     font-style: italic;
     display: block;
     margin-bottom: 20px;
+}
+
+/* section5/location */
+.map {
+    max-width: 1200px;
+    width: 100%;
+    margin: 60px auto;
+    padding: 10px;
 }
 /* hover effects */
 .list-a:hover {
