@@ -372,6 +372,64 @@
     margin: 60px auto;
     padding: 10px;
 }
+/* footer */
+.footer {
+    background-color: black;
+    padding: 20px;
+}
+.footer-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-footer {
+    width: 200px;
+}
+.footer-title {
+    color: #7bf137;
+    font-size: 18px;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+}
+.footer-list {
+    margin-bottom: 10px;
+}
+.list-footer {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Roboto';
+    transition: 0.2s linear;
+}
+.fa-facebook-f {
+    font-size: 25px;
+    color: #fff;
+    transition: 0.2s linear;
+}
+.fa-facebook-f::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background-color: #FFFFFF;
+    margin: 0 14px 0 15px;
+    vertical-align: middle;
+}
+.fa-instagram {
+    font-size: 25px;
+    color: #fff;
+    transition: 0.2s linear;
+}
+.final-text {
+    text-align: center;
+    color: #fff;
+    margin-top: 25px;
+    font-size: 15px;
+}
+.myname {
+    color: #7bf137;
+}
 /* hover effects */
 .list-a:hover {
     color: #7bf137;
@@ -395,6 +453,15 @@
 .send-button:hover {
     background-color: #7bf137;
     color: #fff;
+}
+.list-footer:hover {
+    color: #7bf137;
+}
+.fa-facebook-f:hover {
+    color: blue;
+}
+.fa-instagram:hover {
+    color: #fd2b1d;
 }
 
 
