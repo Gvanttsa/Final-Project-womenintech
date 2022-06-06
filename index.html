@@ -34,7 +34,7 @@
                         <a href="#section3" class="list-a">Our Team</a>
                     </li>
                     <li class="li-list">
-                        <a href="#" class="list-a">Contact</a>
+                        <a href="#section4" class="list-a">Contact</a>
                     </li>
                     <li class="li-list">
                         <a href="#" class="list-a">Location</a>
@@ -110,7 +110,46 @@
         </div>
     </section>
 
-    
+    <section id="section4">
+        <div class="section4-wrapper">
+            <div>
+                <h2 class="section4-title">Contact</h2>
+                <p class="section4-text">let's start your healty life</p>
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <a href="callto:+995 593 37 33 41" class="number">+995 593 37 33 41</a>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <a href="mailto:nrg.crossfit@outlook.com" class="number">nrg.crossfit@outlook.com</a>
+                </div>
+            </div>
+            
+            <div class="form">
+                <h2 class="form-heading">Drop a line</h2>
+                <form action="#" method="POST" id="contact-form">
+                    <div>
+                        <input type="text" name="yourname" placeholder="Name" id="userName" class="input">
+                        <span class="error-text" id="errors_yourname"></span>
+                    </div>
+                    <div>
+                        <input type="text" name="yoursurname" placeholder="Surname" id="userSurname" class="input">
+                        <span class="error-text" id="errors_yoursurname"></span>
+                    </div>
+                    <div>
+                        <input type="email" name="youremail" placeholder="Email" id="userEmail" class="input" onkeydown="emailvalidation()">
+                        <span class="error-text" id="errors_youremail"></span>
+                    </div> 
+                    <button type="submit" class="send-button"> Send</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
 
 
     <script src="script.js"></script>

@@ -191,3 +191,55 @@ function errorRender() {
 }
 
 getUsers();
+
+
+//form
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let errors = {};
+    let form = event.target;
+
+    let username = document.getElementById('userName').value;
+    if (username.length < 4 || username == '') {
+        errors.yourname = 'Name can not be empty and must be more than 4 characters'
+    }
+
+    let surname = document.getElementById('userSurname').value;
+    if (surname.length < 5 || surname == '') {
+        errors.yoursurname = 'Surame can not be empty and must be more than 5 characters'
+    }
+    console.log(errors);
+
+    form.querySelectorAll('.error-text').forEach(item => {
+        item.innerHTML = '';
+    })
+
+    for (let item in errors) {
+        console.log(item);
+        let errorSpan = document.getElementById('errors_' + item);
+
+        if (errorSpan) {
+            errorSpan.textContent = errors[item];
+        }
+    }
+
+    if (Object.keys(errors).length == 0) {
+        form.submit();
+    }
+
+});
+
+function emailvalidation() {
+    let emailFiled = document.getElementById('userEmail').value;
+    let spanText = document.getElementById('errors_youremail');
+    let emailStructure = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ 
+
+    if (emailFiled.match(emailStructure)) {
+        spanText.innerHTML ='Your Email is valid';
+        spanText.style.color = 'green';
+    } else {
+        spanText.innerHTML = 'Your Email is invalid';
+        spanText.style.color = 'red'
+    }
+}

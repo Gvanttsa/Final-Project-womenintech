@@ -26,6 +26,7 @@
     font-size: 20px;
     color: #fff;
     font-family: 'Roboto';
+    transition: 0.3s linear;
 }
 .toggle-menu {
     position: absolute;
@@ -111,7 +112,6 @@
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 5px 5px 5px black;
-    
 
 }
 .dots {
@@ -134,7 +134,7 @@
     background-color: #7bf137;
 }
 
-/* section 2 */
+/* section 2/ accordion*/
 .section2-wrapper {
     max-width: 1200px;
     width: 100%;
@@ -219,6 +219,7 @@
 }
 .accordion-container.activecontainer .fa-angle-down {
     transform: rotate(180deg);
+    transition: 0.5s linear;
 }
 
 /* section3 */
@@ -258,12 +259,114 @@
 }
 .user-img {
     height: 100%;
-    
 }
 
+/* section4 */
+.section4-wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.section4-title {
+    font-size: 20px;
+    color: #7bf137;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.section4-text {
+    max-width: 450px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    
+}
+.contact-box {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+}
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.number {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.form {
+    width: 40%;
+}
+.form-heading {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+/* form */
+.input {
+    max-width: 350px;
+    width: 100%;
+    height: 60px;
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+    border: 1px solid #7bf137;
+    background-color: rgb(56, 56, 59);
+    padding-left: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+
+}
+.input:focus {
+    outline: none;
+}
+.send-button {
+    max-width: 350px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    font-size: 20px;
+    color: #7bf137;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s linear;
+}
+.error-text {
+    color: red;
+    font-style: italic;
+    display: block;
+    margin-bottom: 20px;
+}
 /* hover effects */
 .list-a:hover {
     color: #7bf137;
+    
 }
 .accordion-container:hover .fa-solid {
     color: #fff;
@@ -277,6 +380,14 @@
 .names:hover {
     color: #7bf137;
 }
+.number:hover {
+    color: #7bf137;
+}
+.send-button:hover {
+    background-color: #7bf137;
+    color: #fff;
+}
+
 
 
 
